@@ -4,7 +4,7 @@ print("The number 7 is even: {} ".format(ps0.is_even(7)))
 print("The number 10 is even: {} ".format(ps0.is_even(10)))
 print("The number 0 is even: {} ".format(ps0.is_even(0)))
 
-print("5 has {} digits".format(ps0.number_of_digits(5)))
+print("0 has {} digits".format(ps0.number_of_digits(0)))
 print("6 has {} digits".format(ps0.number_of_digits(6)))
 print("50 has {} digits".format(ps0.number_of_digits(50)))
 print("872 has {} digits".format(ps0.number_of_digits(872)))

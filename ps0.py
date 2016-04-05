@@ -47,7 +47,7 @@ def factorial(number):
 	if number == 0:
 		return 1
 	else:
-		return number
+		return total
 
 #--------------Function 5---------------------
 def factor_of(firstNum, SecondNum):
@@ -74,7 +74,7 @@ def is_perfect(number):
 	while x < number: # if the increasing number is higher than the given number then we already have all of the factors
  		if number % x == 0: #every time this equals 0 it finds a factor
  			factors += x 
- 			x += 1
+			x += 1
 	if factors == number:
 		return True
 	else:
