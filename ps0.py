@@ -83,7 +83,7 @@ def is_perfect(number):
 	
 #------------Function 8----------------
 def divisible_sum(number):
-	if number % sum_of_digits(number) == 0:
+	if number % sum_digits(number) == 0:
 		return True
 	else:
 		return False 
