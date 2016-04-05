@@ -40,15 +40,14 @@ def sum_less_int(number):
 def factorial(number):
 	'''a number is given and the function takes all of the integers up to
 	and including the given integer and multiplies them together'''
-	total = 1
-	while number > 1:
-		total *= (number-1)
-		number -= 1
 	if number == 0:
 		return 1
 	else:
+		total = number
+		while number != 1:
+			number -= 1
+			total *= number
 		return total
-
 #--------------Function 5---------------------
 def factor_of(firstNum, SecondNum):
 	remainder = firstNum % SecondNum
@@ -72,8 +71,8 @@ def is_perfect(number):
 	factors = 0 # finds all factors and adds them together
 	x = 1 #goes through all the numbes and tells what it is divisible by
 	while x < number: # if the increasing number is higher than the given number then we already have all of the factors
- 		if number % x == 0: #every time this equals 0 it finds a factor
- 			factors += x 
+		if number % x == 0: #every time this equals 0 it finds a factor
+			factors += x
 			x += 1
 	if factors == number:
 		return True
