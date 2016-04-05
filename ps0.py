@@ -68,17 +68,15 @@ def prime(number):
 		
 #----------Function 7----------------
 def is_perfect(number):
-	factors = 0 # finds all factors and adds them together
-	x = 1 #goes through all the numbes and tells what it is divisible by
-	while x < number: # if the increasing number is higher than the given number then we already have all of the factors
-		if number % x == 0: #every time this equals 0 it finds a factor
+	factors = 0 
+	for x in range(1,number): 
+		if number % x == 0: 
 			factors += x
-			x += 1
-	if factors == number:
+	if number == factors:
 		return True
 	else:
 		return False
-
+	
 	
 #------------Function 8----------------
 def divisible_sum(number):

@@ -33,5 +33,5 @@ print("6 is perfect: {}".format(ps0.is_perfect(6)))
 print("7 is perfect: {}".format(ps0.is_perfect(7)))
 print("8 is perfect: {}".format(ps0.is_perfect(8)))
 
-print("The number 20 is divisible by {}. {}".format(ps0.sum_of_digits(20), ps0.divisible_sum(20)))
-print("The number 42 is divisible by {}. {}".format(ps0.sum_of_digits(42), ps0.divisible_sum(42)))
+print("The number 20 is divisible by {}. {}".format(ps0.sum_digits(20), ps0.divisible_sum(20)))
+print("The number 42 is divisible by {}. {}".format(ps0.sum_digits(42), ps0.divisible_sum(42)))
