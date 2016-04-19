@@ -9,24 +9,28 @@ def is_even(number):
 
 #-----Function 1------------
 def number_of_digits(number):
-	'''This will count how many digits are in a number.'''
-	number = str(number)
+	'''This will count how many digits are in a number. Non-negative'''
 	numberOfDigits = 0
-	for character in number:
+	while number > 0:
+		number /= 10
 		numberOfDigits += 1
-	return numberOfDigits
 	
-#-----Function 2--------------
+	return numberOfDigits
+
+	
+#-----Function 2-------------- 
 def sum_digits(number):
-	number = str(number)
-	digits = [] 
-	for character in number:
-		character = int(character) 
-		digits.append(character) 
-	sumOfDigits = 0
-	for x in digits:
-		sumOfDigits += x
-	return sumOfDigits
+	"""Takes a non negative integer as a parameter returns the sum of the digits"""
+	sum = 0
+
+	while digits > 0:
+		finalNumber = digits % 10
+		digits -= finalNumber 
+		#this will get the last digit and then subtract it
+		sum += finalNumber
+		digits /= 10
+	
+	return sum
 	
 #--------Function 3---------------
 def sum_less_int(number):
